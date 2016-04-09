@@ -1,0 +1,9 @@
+Wspólne repozytorium zostało zarejestrowane z konta KNR.
+ 
+Aby zacząć wgrywać na do niego kod należy:
+1. Zrobić FORK repozytorium na swoje konto,
+2. Sklonować (CLONE) wersje ze swojego konta na komputer lub tyko ustawić jego adres jako repo, do którego chcemy wypychać (PUSH) zmiany
+3. Narazie projekt będzie posiadał 3 gałęzie: master, develop i UAT. Pliki bibliotek, które napisaliśmy (lub częściowo napisaliśmy), wgrywamy/wypychamy do repo na swoim koncie.
+4. Otwieramy PULL REQUEST !!! DO GAŁĘZI DEVELOP !!! przy takim otwartym PULL REQUEST każdy może skomentować zmiany oraz zamknąć PULL REQEUST, co powoduje wgranie zmian do naszego głównego kołowego repozytorium. 
+
+Popróbujcie, zobaczymy, czy wszyscy będą wszystko widzieć, itp. 
