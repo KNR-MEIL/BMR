@@ -1,0 +1,31 @@
+Przykład funkcji.
+
+//Funkcja funkcja_do_robienia_niczego jest odpowiedzialna za robienie niczego.
+////Funkcja zwraca wartość własną macierzy jakobianowej manipulatora IRp-6 stojącego w 027
+//////Argumenty:
+//////pierwszy_argument		liczba członków SKAP
+//////drugi_argument		  liczba krzesełek w sali A1
+uint8_t funkcja_do_robienia_niczego(uint16_t pierwszy_argument, int32_t drugi_argument)
+{
+	//treść funkcji
+}
+
+Zachęcam do definiowania własnych wartości argumentów. Chodzi o to aby argumenty nie przyjmowały wartości: 0, 1, ...
+tylko na przykład motor_enable lub motor_disable.
+Można także definiować własne typy zmiennych, np. typ wyliczeniowy enum jest bardzo przyjemny w wykorzystaniu.
+
+typedef enum
+{
+  EXTI_Trigger_Rising = 0x08,
+  EXTI_Trigger_Falling = 0x0C,  
+  EXTI_Trigger_Rising_Falling = 0x10
+}EXTITrigger_TypeDef;
+
+i jeśli teraz będziemy mieli w funkcji argument typu EXTITrigger_TypeDef to możemy napisać w komentarzu do funkcji
+//////Argumenty:
+//////exti_trigger		typ zbocza sygnału włączający przerwanie, przyjmuje wartości:
+//////		EXTI_Trigger_Rising		        zbocze rosnące
+//////		EXTI_Trigger_Falling		      zbocze malejące
+//////		EXTI_Trigger_Rising_Falling	  oba zbocza: rosnące i malejące
+
+Myślę, że najlepiej zobaczyć jak to jest wykonane w bibliotekach StdPeriph_Driver dostarczanych przez firmę ST.
